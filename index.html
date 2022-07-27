@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Imagens/favicon32x32.png">
+    <title>Circulo+Biso</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        img {
+            max-width: 100%;
+        }
+      
+
+        @media screen and  (max-width:1280px) {
+
+            .container-first,
+            .container-first-img {
+                flex-direction: column !important;
+            }
+
+            .container-first {
+                text-align: center !important;
+                height: auto !important;
+                padding: 100px 0 150px !important;
+            }
+
+            .container-first-img-3 {
+                margin: 30px 0 0 0 !important;
+            }
+
+            .logo-Circulo {
+                margin: 0 !important;
+            }
+
+            .container-first-text {
+                width: 100% !important;
+                padding: 84px 20px 0 20px !important;
+            }
+
+            .container-first-img-2 {
+                flex-direction: column !important;
+            }
+
+          
+
+            .container-secund {
+                height: auto !important;
+                padding: 169px 20px 131px 20px !important;
+            }
+
+            .container-third {
+                height: auto !important;
+            }
+
+            .container-third-text-1,
+            .container-third-text-2 {
+                width: 100% !important;
+            }
+
+            .container-third-text-1 {
+                padding: 0 20px !important;
+            }
+
+            .container-third-text-2 {
+                padding: 89px 20px 107px 20px !important;
+            }
+
+            .third-img-margin {
+                margin-left: 43px !important;
+                margin-top: 70px !important;
+            }
+
+            .container-third-img-1 {
+                padding: 0 !important;
+            }
+
+            .container-fourth-content-left {
+                text-align: center !important;
+                padding: 0 0 150px 0 !important;
+                width: 100% !important;
+                background-image: url(Imagens/bg-4.png) !important;
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+            }
+
+            .container-fourth-text-1 {
+                width: 100% !important;
+                padding: 0 20px 44px 20px !important
+            }
+
+            .container-fourth-content-right {
+                float: left !important;
+                text-align: center !important;
+                padding: 0 !important;
+                height: auto !important;
+                background-image: url(Imagens/bg-4-2.png) !important;
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                width: 100% !important;
+            }
+
+            .container-fourth {
+                background: none !important;
+                height: auto !important;
+                padding: 0 !important;
+            }
+
+            .container-fourth-img-1 {
+                padding: 150px 0 0 0 !important;
+            }
+
+          
+
+            .container-fourth-img-2 {
+                margin: 150px 0 90px 0 !important;
+            }
+
+            .container-fourth-text-2 {
+                width: 100% !important;
+                padding: 0 20px 30px 20px !important;
+            }
+
+            .btn-Circulo {
+                margin: 63px 0 150px 0 !important;
+                width: 100% !important;
+            }
+
+            .container-fifth {
+                float: left !important;
+                height: 100% !important;
+            }
+
+            .container-fifth-footer {
+                flex-direction: column !important;
+            }
+
+            .container-fifth-footer-Breno,
+            .container-fifth-footer-Pedro,
+            .container-fifth-footer-Luis {
+                margin: 119px 20px 0 20px !important;
+            }
+
+        }
+
+
+
+        .container-first {
+            background-image: url("Imagens/bgHeader.png");
+            display: flex;
+            padding-top: 100px;
+            flex-direction: column;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 814px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .container-first-img {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            max-width: 100%;
+        }
+
+        .logo-Circulo {
+            margin-right: 49px;
+        }
+
+        .mais {
+            margin: 20px 49px 0 0;
+        }
+
+        .container-first-text {
+            flex-direction: column;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 46.88px;
+            color: #EDEDED;
+            width: 792px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 84px 0 0px 0;
+        }
+
+
+        .gradient {
+            background-image: linear-gradient(90.06deg, #00E7FF 8.33%, #FE2E36 53.95%, #FF0068 96.88%),
+                linear-gradient(90.06deg, #00E7FF 8.33%, #FE2E36 53.95%, #FF0068 96.88%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .container-first-img-2 {
+            display: flex;
+            justify-content: center;
+            gap: 37px;
+            flex-direction: row;
+            max-width: 100%;
+            vertical-align: top;
+        }
+
+        .container-first-img-2-1 {
+            margin-top: 91px;
+        }
+
+        .container-first-img-2-2 {
+            margin-top: 74px;
+        }
+
+        .container-first-img-2-3 {
+            margin-top: 85px;
+        }
+
+
+        .container-secund {
+            background: #000000;
+            font-size: 40.31px;
+            font-weight: 500;
+            line-height: 47.24px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 169px 0 131px 0;
+            width: 100%;
+            height: 757px;
+            margin: 0 auto;
+        }
+
+
+
+        .container-third {
+            background: #FFFFFF;
+            margin: 106px auto 0;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+
+        .container-third-img-1 {
+            padding: 0 0 129px 0;
+
+
+
+        }
+
+        .third-img-margin {
+            margin-right: 43.19px;
+            margin-top: 60px;
+        }
+
+        .container-third-text-1 {
+            font-size: 40.31px;
+            font-weight: 700;
+            line-height: 47.24px;
+            color: #222222;
+            text-align: center;
+            margin-bottom: 124px;
+            width: 1022px;
+
+        }
+
+        .container-third-text-2 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 37.5px;
+            text-align: center;
+            color: #222222;
+            padding: 89px 0 107px 0;
+            width: 1022px;
+        }
+
+       
+
+        .container-fourth {
+            background-image: url(Imagens/bg-4-2-final.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 1119px;            
+            padding-top: 149px;
+            margin: 0 auto;
+            background-size: 100% 100%;
+
+
+        }
+
+        .container-fourth-content-left {
+            float: left;
+            text-align: left;
+            padding-left: 99px;
+        }
+
+        .container-fourth-content-right {
+            float: right;
+            text-align: right;
+            padding-right: 85px;
+        }
+
+
+        .container-fourth-img-1 {
+            max-width: 100%;
+            margin: 0 0 75px 0;
+
+
+        }
+
+        .container-fourth-img-2 {
+            max-width: 100%;
+            margin: 0 0 90px 0;
+        }
+
+        .container-fourth-text-1,
+        .container-fourth-text-2 {
+            width: 534px;
+            color: #C4C4C4;
+            font-weight: 400;
+            font-size: 32px;
+            font-weight: 37.5px;
+        }
+
+        .container-fourth-text-1 {
+            padding-bottom: 44px;
+        }
+
+        .logo-VTEX-2 {
+            margin-bottom: 42px;
+        }
+
+        .btn-Biso {
+            margin-top: 61px;
+        }
+
+        .container-fourth-text-2 {
+            padding-bottom: 30px;
+
+        }
+
+        .logo-SFMC {
+            margin-bottom: 47px;
+        }
+
+        .certificacao-SFMC {
+            margin-right: 14px;
+        }
+
+        .btn-Circulo {
+            margin-top: 63px;
+        }
+
+        
+        .btn-conheca{
+            opacity: 1.0;
+                
+        }
+              
+        .btn-conheca:hover {
+                
+                opacity: 0.5;
+              
+        }
+
+        .container-fifth {
+            background: #EDEDED;
+            width: 100%;
+            height: 1500px;
+            margin: 0 auto;
+        }
+
+        .container-fifth-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+
+        }
+
+        .container-fifth-footer-Breno {
+            margin: 119px 167px 0 114px;
+        }
+
+        .container-fifth-footer-Pedro {
+            margin: 119px 167px 0 0;
+        }
+
+        .container-fifth-footer-Luis {
+            margin: 119px 107px 0 0;
+        }
+
+        h3 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 46.88px;
+            text-align: center;
+            color: #000000;
+            padding: 57px 0 9px 0;
+        }
+
+        h6 {
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 37.5px;
+            text-align: center;
+            color: #000000;
+            padding-bottom: 52px;
+        }
+
+        h4 {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 35.16px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .btn-fale-conosco {
+            
+            text-align: center;
+            border-radius: 52.5px;
+                width: 308px;
+                max-width: 90% ;
+                padding: 34px;
+                outline: none;
+                color: #FFFFFF;
+                background: #FE2F36;
+                font-size: 32px;
+                border: none;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+                max-width: 90% ;
+                
+        }
+
+        .container-button-fale-conosco{
+            width: 100%;
+            margin: 145px auto;
+            text-align: center;
+        }
+
+        .btn-fale-conosco:hover{
+            background: #fe010a;
+        }
+
+
+              /* FELLIPE */
+
+              .button-container {
+                width: 100%;
+                position: relative;
+            }
+    
+            .button {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 52.5px;
+                width: 308px;
+                max-width: 90% ;
+                padding: 34px;
+                outline: none;
+                color: #FFFFFF;
+                background: #FE2F36;
+                font-size: 32px;
+                border: none;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+            }
+            
+            .button:hover{
+                background: #fe010a;
+            }
+
+
+
+          /* FELLIPE */
+    </style>
+</head>
+
+<body>
+    <div class="container-first">
+
+        <div class="container-first-img">
+            <div class="container-first-img-1">
+                <a href="#"><img class="logo-Circulo" src="Imagens/LogoCirculo.png" alt="Logo Circulo"></a>
+            </div>
+            <div class="container-first-img-2">
+                <a href="#"><img class="mais" src="Imagens/+.png" alt="Sinal de mais"></a>
+            </div>
+            <div class="container-first-img-3">
+                <a href="#"><img class="logo-Biso" src="Imagens/LogoBiso.png" alt="Logo Biso"></a>
+            </div>
+        </div>
+
+        <div class="container-first-text">
+            <p>Centralize os dados do seu ecommerce e tenha uma visão 360º de todas as suas estratégias de CRM na palma
+                da sua mão <br><span class="gradient">TENHA ESTRATÉGIAS MAIS EFICIENTES</span></p>
+        </div>
+
+        <div class="container-first-img-2">
+            <div class="container-first-img-2-1">
+                <a href="#"><img src="Imagens/LogoVtex.png" alt="Logo Vtex"></a>
+            </div>
+            <div class="container-first-img-2-2">
+                <a href="#"><img src="Imagens/LogoGoogleAnalytics.png" alt="Logo Google Analytics"></a>
+            </div>
+            <div class="container-first-img-2-3">
+                <a href="#"><img src="Imagens/LogoMktCloud.png" alt="Logo Salesforce Marketing Cloud"></a>
+            </div>            
+
+        </div>
+
+    </div>
+
+    <div class="btn-container">
+       <a href="wa.me/+5511976338404"><button class="button">
+        Saiba mais
+     </button></a> 
+    </div> 
+
+    <div class="container-secund">
+        <p><span class="gradient">TENHA NA PALMA DA SUA MÃO</span></p><br>
+        <p>&#8226; Controle da quantidade de Super messages</p><br>
+        <p>&#8226; Notificações do desempenho da suas jornadas em tempo Real</p><br>
+        <p>&#8226; Monitore suas taxas de entregas</p><br>
+        <p>&#8226; Acompanhe as suas conversões</p>
+    </div>
+
+    <div class="container-third">
+        <div class="container-third-text-1">
+            <p>CRUZE OS MAIS DIVERSOS DADOS DA SUA LOJA EM TEMPO REAL E FAÇA CAMPANHAS DE MARKETING</p>
+        </div>
+
+
+        <div class="container-third-img-1">
+            <div>
+            <a href="#"><img class="third-img-margin" src="Imagens/Produtos.png" alt="Produtos"></a>
+            <a href="#"><img class="third-img-margin" src="Imagens/TicketMedio.png" alt="Ticket Médio"></a>
+            <a href="#"><img class="third-img-margin" src="Imagens/Categorias.png" alt="Categorias"></a>
+            <a href="#"><img class="third-img-margin" src="Imagens/Recorrencia.png" alt="Recorrência"></a>
+            <a href="#"><img class="third-img-margin" src="Imagens/Frequencia.png" alt="Frequência"></a>
+
+            </div>
+            
+            <div>
+            <a href="#"><img class="third-img-margin" src="Imagens/Cliques.png" alt="Cliques"></a>
+            <a href="#"><img class="third-img-margin" src="Imagens/Aberturas.png" alt="Aberturas"></a>
+            <a href="#"><img class="third-img-margin" src="Imagens/Visitas.png" alt="Visitas"></a>
+            <a href="#"><img class="third-img-margin" src="Imagens/Compras.png" alt="Compras"></a>
+            <a href="#"><img class="third-img-margin" src="Imagens/Abandono.png" alt="Abandono"></a>
+
+            </div>
+            
+        </div>
+
+
+
+        <div class="container-third-text-2">
+            <p>Com a nossa solução, é possível extrapolar a criatividade e otimizar os resultados das campanhas,
+                independente do canal: e-mail marketing, mídia ou vitrines dinâmicas em sua loja. </p>
+        </div>
+
+
+    </div>
+
+    <div class="btn-container">
+        <a href="wa.me/+5511976338404"><button class="button">
+         Saiba mais
+      </button></a> 
+     </div> 
+
+    <div class="container-fourth">
+
+        <div class="container-fourth-content-left">
+           
+            <div class="container-fourth-img-1">
+                <a href="#"><img src="Imagens/LogoBiso-2.png" alt="Logo Biso"></a>
+            </div>
+            <div class="container-fourth-text-1">
+                <p>A Biso é uma solução ativa de BI focada 100% em seu e-commerce, nosso algoritmo de inteligência
+                    artificial é responsável por gerar insights que mudam o ponteiro do seu negócio através de
+                    parâmetros e metas pré estabelecidas.</p>
+            </div>
+            <div class="logo-VTEX-2">
+                <a href="#"><img src="Imagens/LogoVtex2.png" alt="Logo Vtex"></a>
+            </div>
+            <div><a href=""><img src="Imagens/selo-ecommerce-brasil-mantenedor-min 2.png" alt="Selo Ecommerce Brasil"></a></div>
+
+            <div class="btn-Biso"><a href="https://www.biso.digital/"><img src="Imagens/btnBiso.png" class="btn-conheca"
+                        alt="Botão conheça a Biso"></a></div>
+        </div>
+
+        <div class="container-fourth-content-right">
+            <div class="container-fourth-img-2">
+                <a href="#"><img src="Imagens/LogoCirculo2.png" alt="Logo Circulo"></a> </div>
+
+            <div class="container-fourth-text-2">
+                <p><b>SOMOS UMA CONSULTORIA DE CRM & MARTECH</b><br><br>
+                    Existimos para construir relacionamentos verdadeiros, criar conexões duradouras e gerar resultados.
+                </p>
+            </div>
+            <div class="logo-SFMC">
+                <a href="#"><img src="Imagens/SFMC.png" alt="Logo Salesforce Marketing Cloud"></a>
+            </div>
+            <div>
+                <a href="#"><img class="certificacao-SFMC" src="Imagens/CertifMCE.png" alt="Certified Marketing Cloud Especialist"></a>
+                <a href="#"><img class="certificacao-SFMC" src="Imagens/CertifMCD.png" alt="Certified Marketing Cloud Developer"></a>
+                <a href="#"><img class="certificacao-SFMC" src="Imagens/CertifMCC.png" alt="Certified Markerting Cloud Consultant"></a>
+                <a href="#"><img src="Imagens/CertifMCA.png" alt="Certified Marketing Cloud Administrator"></a>
+            </div>
+            <div class="btn-Circulo"><a href="https://www.circulocrm.com.br/"><img src="Imagens/btnCirculo.png" class="btn-conheca"
+                        alt="Botão conheça a Circulo"></a></div>
+        </div>
+    </div>
+
+    <div class="container-fifth">
+        <div class="container-fifth-footer">
+
+            <div class="container-fifth-footer-Breno">
+                <a href="#"><img src="Imagens/BrenoBerman.png" alt="Foto Breno Berman"></a>
+                <div class="container-fifth-text">
+                    <h3>BRENO BERMAN</h3>
+                    <h6>Founder & CEO  <br>na Biso Digital</h6><br>
+                    <h4>Com mais de 9 anos de carreira no universo digital, já atuei em inúmeros projetos de diferentes
+                        segmentos focados em e-commerces B2B, B2C, D2C. Sempre visando e trazendo resultados que
+                        impactaram na aceleração digital de empresas</h4>
+                </div>
+            </div>
+
+            <div class="container-fifth-footer-Pedro">
+                <a href="#"><img src="Imagens/PedroCastro.png" alt="Foto Pedro Castro"></a>
+                <h3>PEDRO CASTRO</h3>
+                <h6>Co-Founder & CRO  <br>na Círculo CRM</h6><br>
+                <h4>Publicitário e pós graduado em Marketing Digital pela FAAP Atua no mercado desde 2010, com foco em
+                    estratégias de CRM e campanhas digitais para varejo, mobiliário, setor público, farmacêutica e
+                    saúde, aplicativos e indústrias B2B.</h4>
+
+            </div>
+
+            <div class="container-fifth-footer-Luis">
+                <a href="#"><img src="Imagens/LuisGreco.png" alt="Foto Luis Greco"></a>
+                <h3>LUÍS GRECO</h3>
+                <h6>Co-Founder & COO <br>na Círculo CRM</h6><br>
+                <h4>Possui 10 anos de experiência em consultoria de negócios. Grande parte destes anos dedicados à CRM &
+                    Marketing Digital. Liderou equipes e projetos multidisciplinares nos setores de Varejo, Serviços e
+                    Indústria.</h4>
+            </div>
+
+        </div>
+
+        <div class="container-button-fale-conosco">
+            <a href="wa.me/+5511976338404"><button class="btn-fale-conosco">Fale Conosco</button></a>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
